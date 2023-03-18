@@ -1,3 +1,144 @@
+@font-face {
+    font-family: 'gelicamedium';
+    src: url('fontspring-demo-gelica-medium-webfont.woff2') format('woff2'),
+         url('fontspring-demo-gelica-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'gelicasemibold';
+    src: url('fontspring-demo-gelica-semibold-webfont.woff2') format('woff2'),
+         url('fontspring-demo-gelica-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'gelicaregular';
+    src: url('fontspring-demo-gelica-regular-webfont.woff2') format('woff2'),
+         url('fontspring-demo-gelica-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'gelicalight';
+    src: url('fontspring-demo-gelica-light-webfont.woff2') format('woff2'),
+         url('fontspring-demo-gelica-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'gelicabold';
+    src: url('fontspring-demo-gelica-bold-webfont.woff2') format('woff2'),
+         url('fontspring-demo-gelica-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'gelicaextralight';
+    src: url('fontspring-demo-gelica-extralight-webfont.woff2') format('woff2'),
+         url('fontspring-demo-gelica-extralight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'gelicablack_italic';
+    src: url('fontspring-demo-gelica-blackitalic-webfont.woff2') format('woff2'),
+         url('fontspring-demo-gelica-blackitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'gelicaextralight_italic';
+    src: url('fontspring-demo-gelica-extralightitalic-webfont.woff2') format('woff2'),
+         url('fontspring-demo-gelica-extralightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'gelicamedium_italic';
+    src: url('fontspring-demo-gelica-mediumitalic-webfont.woff2') format('woff2'),
+         url('fontspring-demo-gelica-mediumitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'gelicabold_italic';
+    src: url('fontspring-demo-gelica-bolditalic-webfont.woff2') format('woff2'),
+         url('fontspring-demo-gelica-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'gelicablack';
+    src: url('fontspring-demo-gelica-black-webfont.woff2') format('woff2'),
+         url('fontspring-demo-gelica-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'gelicasemibold_italic';
+    src: url('fontspring-demo-gelica-semibolditalic-webfont.woff2') format('woff2'),
+         url('fontspring-demo-gelica-semibolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 /* Importing a Google Font */
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&display=swap');
@@ -6,7 +147,7 @@
 
 body {
 	font-family: Raleway, sans-serif;
-	background-color: #fffcf8;
+	background-color: #f8f0e3;
 }
 
 /* Changing the background colour for the header */
@@ -18,7 +159,11 @@ header {
 /* Changing the background color for the navigation bar */
 
 .navbar {
-	background-color: #fff0e0;
+	background: transparent;
+	padding:15px 20px;
+}
+.navbar a {
+margin-right: 50px;
 }
 
 /* Effect on social media buttons */
@@ -40,7 +185,7 @@ footer a:hover {
   
   body {
 	margin: 0;
-	font-family: Arial;
+	font-family: "gelica";
 	font-size: 17px;
   }
   
@@ -64,4 +209,3 @@ footer a:hover {
 	padding: 20px;
   }
   
- .main-container{margin-top:20px}
