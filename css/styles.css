@@ -148,28 +148,28 @@
 body {
 	font-family: Raleway, sans-serif;
 	background-color: #f8f0e3;
+  overflow-x: hidden;
 }
 
 /* Changing the background colour for the header */
 
 header {
-	background-color: #000060;
+	background-color: #8dc63f;
 }
 
 /* Changing the background color for the navigation bar */
 
 .navbar {
-	background: transparent;
+	background: #f8f0e3;
 	padding:15px 20px;
-  position: sticky;
+  position: fixed;
   top: 0;
+  z-index: 99;
+  width: 100%;
 }
 .navbar a {
 margin-right: 50px;
 }
-
-.menu
-
 /* Effect on social media buttons */
 
 footer a:hover {
@@ -213,16 +213,35 @@ footer a:hover {
 	padding: 20px;
   }
   
-  .masonry {
+  /* .masonry {
     column-count: 3;
     column-gap: 10px;
-    padding:0 20px
+    padding: 20px
   }
   
   .item {
     display: inline-block;
     margin-bottom: 10px;
     width: 100%;
+  }
+   */
+
+   .masonry {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+  }
+  
+  .item {
+    width: 30%; /* set the width of each item */
+    margin-bottom: 20px;
+  }
+  
+  .item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
   }
   
   .masonry img {
@@ -235,6 +254,78 @@ footer a:hover {
     opacity: 0.7;
   }
 
+  .flip-card {
+    perspective: 36.5vw;
+    height: 36.5vw;
+  }
+   .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+   .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+   .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+   .flip-card-back {
+    transform: rotateY(180deg);
+    background: rgb(141,198,79);
+    background: radial-gradient(circle, rgba(141,198,79,1) 0%, #f8f0e3 65%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 80px;
+    color: #f8f0e3;
+    border-radius: 5px;
+    height: 36.5vw;
+  }
+ 
+  
+
+  .outdoor
+  {
+    height: calc(100vh - 101.4px);
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    padding: 40px 40px;
+    background-image: url("../images/dropmain.jpg");
+    background-size: cover;
+    background-position: center;
+    margin-top: 101px;
+  }
+  
+  .outdoor h1 {
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: white;
+    opacity: 0; /* start with 0 opacity */
+    animation: fadeIn 2s ease-in-out forwards; /* apply the fade-in animation */
+    @media (min-width: 992px) {
+      max-width: 80%;
+  }
+}
+
+  /* Define the fade-in animation */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
   .fa {
     font-size: 30px;
     width: 50px;
@@ -261,5 +352,217 @@ footer a:hover {
     background:#8dc53f; 
     color: #f8f0e3;  
   }
+
+  video {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 101px;
+    height: calc(100vh - 101.4px);
+    display: flex;
+    width: 100vw;
+    object-fit:cover
+  }
+  
+  .logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    max-width: 50%;
+    max-height: 50%;
+  }
+
+
+/* align all value-description and value-title below their respective image */
+.values {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  
+}
+.value {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  width: 250px;
+  border: 2px solid #8dc53f;
+  border-radius: 20px;
+  padding: 10px;
+  transition: transform 0.3s ease;
+}
+
+.value:hover {
+  transform: translateY(-10px);
+}
+
+.value img {
+  width: 100px;
+  height: 100px;
+  object-fit:initial
+}
+.value-title {
+  margin-top: 10px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.2rem; /* or any other desired font size */
+}
+.value-description {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 1rem; /* or any other desired font size */
+
+  
+}
+
+.container-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.title {
+  font-size: 1.5rem; /* or any other desired font size */
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 1.2rem; /* or any other desired font size */
+  text-align: center;
+  margin-bottom: 40px;
+  width: 75%;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 10px 20px;
+  background-color: #f8f0e3;
+  color: black;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+  text-decoration: none; /* Add this line to remove the underline */
+	transition: background-color 0.3s ease;
+  border: 2px solid black; /* Add this line to set the border color */
+}
+
+.button:hover {
+  background-color: #8dc53f;
+color: black;
+}
+
+.photo-grid {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 40px;
+}
+
+.photo {
+  width: 25%;
+  padding: 10px;
+  float: left;
+  
+  
+}
+
+.photo-container {
+  position: relative;
+  overflow: hidden;
+  height: 0;
+  padding-bottom: 100%;
+  border: 2px solid #8dc53f;
+  border-radius: 20px;
+  
+
+  
+  
+}
+
+.photo-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  object-fit:contain;
+}
+
+.photo-grid img:hover {
+opacity: 0.7;
+}
+
+.photo h2 {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.persona {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.persona img {
+width: 100vw;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+label {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+input[type="email"] {
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 20px;
+}
+
+input[type="submit"] {
+  background-color: #8dc53f;
+  color: white;
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+input[type="submit"]:hover {
+  background-color: #8dc53f;
+}
+
+
+/* Coporate Css */
+.sidebar {
+padding: 101px 15px 0;
+position:sticky;
+}
+
+
+
+
+
 
 
