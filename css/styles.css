@@ -7,9 +7,6 @@
 
 }
 
-
-
-
 @font-face {
     font-family: 'gelicasemibold';
     src: url('fontspring-demo-gelica-semibold-webfont.woff2') format('woff2'),
@@ -18,9 +15,6 @@
     font-style: normal;
 
 }
-
-
-
 
 @font-face {
     font-family: 'gelicaregular';
@@ -31,9 +25,6 @@
 
 }
 
-
-
-
 @font-face {
     font-family: 'gelicalight';
     src: url('fontspring-demo-gelica-light-webfont.woff2') format('woff2'),
@@ -42,9 +33,6 @@
     font-style: normal;
 
 }
-
-
-
 
 @font-face {
     font-family: 'gelicabold';
@@ -55,9 +43,6 @@
 
 }
 
-
-
-
 @font-face {
     font-family: 'gelicaextralight';
     src: url('fontspring-demo-gelica-extralight-webfont.woff2') format('woff2'),
@@ -66,9 +51,6 @@
     font-style: normal;
 
 }
-
-
-
 
 @font-face {
     font-family: 'gelicablack_italic';
@@ -79,9 +61,6 @@
 
 }
 
-
-
-
 @font-face {
     font-family: 'gelicaextralight_italic';
     src: url('fontspring-demo-gelica-extralightitalic-webfont.woff2') format('woff2'),
@@ -90,9 +69,6 @@
     font-style: normal;
 
 }
-
-
-
 
 @font-face {
     font-family: 'gelicamedium_italic';
@@ -103,9 +79,6 @@
 
 }
 
-
-
-
 @font-face {
     font-family: 'gelicabold_italic';
     src: url('fontspring-demo-gelica-bolditalic-webfont.woff2') format('woff2'),
@@ -115,9 +88,6 @@
 
 }
 
-
-
-
 @font-face {
     font-family: 'gelicablack';
     src: url('fontspring-demo-gelica-black-webfont.woff2') format('woff2'),
@@ -126,9 +96,6 @@
     font-style: normal;
 
 }
-
-
-
 
 @font-face {
     font-family: 'gelicasemibold_italic';
@@ -193,17 +160,6 @@ footer a:hover {
 	font-size: 17px;
   }
   
-  #myVideo {
-	/* position: fixed;
-	right: 0;
-	bottom: 0; */
-	min-width: 100%; 
-	/* min-height: 100%; */
-	max-width: 97vw;
-	max-height: calc(100vh - 67px);
-	object-fit: fill;
-  }
-  
   .content {
 	position: fixed;
 	bottom: 0;
@@ -213,19 +169,6 @@ footer a:hover {
 	padding: 20px;
   }
   
-  /* .masonry {
-    column-count: 3;
-    column-gap: 10px;
-    padding: 20px
-  }
-  
-  .item {
-    display: inline-block;
-    margin-bottom: 10px;
-    width: 100%;
-  }
-   */
-
    .masonry {
     display: flex;
     flex-wrap: wrap;
@@ -234,7 +177,7 @@ footer a:hover {
   }
   
   .item {
-    width: 30%; /* set the width of each item */
+    width: 30%;
     margin-bottom: 20px;
   }
   
@@ -291,8 +234,6 @@ footer a:hover {
     height: 36.5vw;
   }
  
-  
-
   .outdoor
   {
     height: calc(100vh - 101.4px);
@@ -341,8 +282,6 @@ footer a:hover {
     justify-content: center;
   }
   
-  
-  
   .fa-instagram {
     background:#f8f0e3;
     color: #8dc53f;
@@ -374,8 +313,6 @@ footer a:hover {
     max-height: 50%;
   }
 
-
-/* align all value-description and value-title below their respective image */
 .values {
   display: flex;
   flex-wrap: wrap;
@@ -408,14 +345,12 @@ footer a:hover {
   margin-top: 10px;
   font-weight: bold;
   text-align: center;
-  font-size: 1.2rem; /* or any other desired font size */
+  font-size: 1.2rem;
 }
 .value-description {
   margin-top: 10px;
   text-align: center;
-  font-size: 1rem; /* or any other desired font size */
-
-  
+  font-size: 1rem;
 }
 
 .container-content {
@@ -428,14 +363,14 @@ footer a:hover {
 }
 
 .title {
-  font-size: 1.5rem; /* or any other desired font size */
+  font-size: 1.5rem;
   font-weight: bold;
   text-align: center;
   margin-bottom: 10px;
 }
 
 .description {
-  font-size: 1.2rem; /* or any other desired font size */
+  font-size: 1.2rem;
   text-align: center;
   margin-bottom: 40px;
   width: 75%;
@@ -451,9 +386,9 @@ footer a:hover {
   text-align: center;
   font-size: 1.2rem;
   cursor: pointer;
-  text-decoration: none; /* Add this line to remove the underline */
+  text-decoration: none;
 	transition: background-color 0.3s ease;
-  border: 2px solid black; /* Add this line to set the border color */
+  border: 2px solid black;
 }
 
 .button:hover {
@@ -473,8 +408,6 @@ color: black;
   width: 25%;
   padding: 10px;
   float: left;
-  
-  
 }
 
 .photo-container {
@@ -484,10 +417,6 @@ color: black;
   padding-bottom: 100%;
   border: 2px solid #8dc53f;
   border-radius: 20px;
-  
-
-  
-  
 }
 
 .photo-container img {
@@ -553,16 +482,12 @@ input[type="submit"]:hover {
   background-color: #8dc53f;
 }
 
-
 /* Coporate Css */
 .sidebar {
 padding: 101px 15px 0;
 position:sticky;
 }
 
-
-
-
-
-
-
+.points li {
+margin-bottom: 20px
+}
